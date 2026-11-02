@@ -84,7 +84,7 @@ game=0, voice=1 e render=1.
 Para conferir os índices de uma gravação antes de rodar:
 
 ~~~powershell
-ffprobe -v error -select_streams a -show_entries stream=index:stream_tags=title -of json "videosinputgravacao.mkv"
+ffprobe -v error -select_streams a -show_entries stream=index:stream_tags=title -of json "videos\input\gravacao.mkv"
 ~~~
 
 ## Como executar
@@ -121,3 +121,14 @@ em 9:16, sem blur de fundo e sem um agente escolhendo o enquadramento.
 7. review.py cria o arquivo Excel com as abas Cortes e Evidências.
 
 Os caches permitem rodar de novo sem pagar o custo de Whisper e Gemma toda vez.
+
+## Resultado
+
+O short mais visto do canal [Lanceplays](https://www.youtube.com/@Lanceplaysbr/shorts),
+["A arte de destruir FOBs"](https://youtube.com/shorts/SVnXNEP6gHs), saiu de um corte
+encontrado por este pipeline. A ferramenta achou o momento; o título, o meme e a
+leitura de que a trilha do jogo combinava com a cena foram decisões humanas.
+
+## Licença
+
+MIT. Veja [LICENSE](LICENSE).
